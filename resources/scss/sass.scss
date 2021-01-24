@@ -1,0 +1,979 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: rgba(17, 25, 44, 1);
+    color: rgba(219, 219, 219, 0.85);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    letter-spacing: 0.05rem;
+    line-height: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    display: none;
+}
+
+.loading-page {
+    position: fixed;
+    z-index: 20;
+    background: url('img/loading.gif') no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .counter {
+        text-align: center;
+    }
+    .counter p {
+        font-size: 40px;
+        font-weight: 100;
+        color: white;
+    }
+    .counter h1 {
+        color: white;
+        font-size: 60px;
+        margin-top: 10vh;
+        text-shadow: 0 0 1rem rgba(255, 255, 255, 0.80);
+    }
+    .counter hr {
+        background: white;
+        border: none;
+        height: 1px;
+    }
+    .counter {
+        position: fixed;
+        width: 200px;
+        h1.abs {
+            position: absolute;
+            top: 10vh;
+            width: 100%;
+        }
+        .color {
+            width: 0px;
+            overflow: hidden;
+            color: white;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgba(219, 219, 219, 0.85);
+}
+
+section {
+    padding: 20vh 5vw 20vh 5vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    position: relative;
+    width: 100vw;
+    max-height: auto;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    height: auto;
+    overflow: hidden;
+}
+
+.parallax {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    .parallax__layer {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+    .layer0 {
+        background: url('img/10_Sky.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+    }
+    .layer1 {
+        background: url('img/09_Forest.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+    }
+    .layer2 {
+        background: url('img/08_Forest.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+    }
+    .layer3 {
+        background: url('img/07_Forest.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+    }
+    .layer4 {
+        background: url('img/06_Forest.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+    }
+    .layer5 {
+        background: url('img/05_Particles.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+    }
+    .layer6 {
+        background: url('img/04_Forest.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+    }
+    .layer7 {
+        background: url('img/Stars%20Small_1.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+        opacity: 0.3;
+    }
+    .layer8-a {
+        background: url('img/Stars-Big_1_1_PC.png') repeat-x center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+        opacity: 0.8;
+    }
+    .layer8 {
+        background-repeat: repeat-x;
+        background-position: center;
+        background-size: cover;
+        width: 150%;
+        height: 160vh;
+        margin-left: -25%;
+        margin-top: -20vh;
+        opacity: 0.5;
+    }
+
+}
+
+.hero-text-box {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    h1 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 40vh 0 40vh 0;
+        color: rgba(255, 255, 255, 0.80);
+        text-shadow: 0 0 1rem rgba(255, 255, 255, 0.80);
+        letter-spacing: 4vw;
+        font-weight: 300;
+        font-size: 14vw;
+        animation-name: blink;
+        animation-delay: 3s;
+        animation-duration: 3.2s;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+    }    
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+}
+
+.mainNav {
+    overflow: hidden;
+    height: 60px;
+    max-width: 100vw;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+    .fas:hover {
+        color: #ffffff;
+    }
+    .far:hover {
+        color: #ffffff;
+    }
+    .section-icons {
+        display: inline-block;
+        position: fixed;
+        top: 20px;
+        left: 0;
+        width: 100vw;
+        height: 30px;
+        #nav0 {
+            left: 10%;
+        }
+        #nav1 {
+            left: 30%;
+        }
+        #nav2 {
+            left: calc(50% - 11.07px);
+        }
+        #nav3 {
+            left: calc(70% - 22.14px);
+        }
+        #nav4 {
+            left: calc(90% - 19.47px);
+        }
+        .sidebarList {
+            text-shadow: 0 0 5px rgb(0, 0, 0);
+            width: auto;
+            height: 30px;
+            position: fixed;
+            top: 30px;
+            align-self: center;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+        }
+    }    
+    .progressBar {
+        overflow: hidden;
+        position: fixed;
+        width: 80vw;
+        height: 10px;
+        left: 10vw;
+        top: 10px;
+        border-radius: 20px;
+        border: 3px solid rgba(144, 144, 144, 0.56);
+        box-shadow: 0 0 7px rgb(0, 0, 0);
+        .bar {
+            position: fixed;
+            border-radius: 20px;
+            max-width: 80vw;
+            height: 8px;
+            left: 10vw;
+            top: 11px;
+            width: 0.1%;
+        }
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 4rem;
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.80);
+}
+
+.overlay-transition {
+    overflow: hidden;
+    background: url('img/02_Bushes.png') repeat-x center;
+    background-size: contain;
+    width: 300vw;
+    height: 150px;                                                                  
+    position: relative; 
+}
+
+.parallax-decorations-01 {
+    overflow: hidden;
+    background: url('img/leaf-02.png') no-repeat right;
+    background-size: 50%;
+    width: 80vw;
+    height: 15em;                                                                 
+    position: absolute; 
+    z-index: 1;
+    left: 22vw;
+    top: 100vh;
+    opacity: 0.7;
+}
+
+.about-me-section {
+    overflow: hidden;
+    background-color: rgb(17, 25, 44);
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-box-shadow: 0 11px 5px -2px #000000; 
+    box-shadow: 0 11px 5px -2px #000000;
+    h2 {
+        width: auto;
+        height: auto;
+        margin: 3rem 0 6rem 0;
+        display: block;
+        text-align: center; 
+    }
+    p {
+        width: 60vw;
+        float: right;
+        display: block;
+        top: 35vh;
+        left: 10vw;
+        margin-right: 5vw;
+    }
+    .profile-picture {
+        background: url('img/Avatar.gif') no-repeat center;
+        position: relative;
+        float: left;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        box-shadow: 0 0 2vw rgba(219, 219, 219, 0.658);
+        display: block;
+    }
+}
+
+.parallax-decorations-02 {
+    overflow: hidden;
+    background: url('img/flower-1.png') no-repeat left;
+    background-size: contain;
+    width: 100vw;
+    height: 15rem;                                                                  
+    position: absolute; 
+    z-index: 1;
+    top: 99vh;
+    opacity: 0.7;
+}
+
+.overlay-transition-02 {
+    overflow: hidden;
+    background: url('img/Tech_1.png') no-repeat center;
+    background-size: contain;
+    text-shadow: 0 0 1rem rgb(63, 240, 195);
+    margin-bottom: 0;
+    width: 90vw;
+    height: 13rem;                                                                  
+    left: 0;
+    position: relative;
+    animation-name: blink;
+    animation-delay: 2s;
+    animation-duration: 2.2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.song-previews-section {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 900px;
+    margin: 0;
+    padding: 0 0 0 0;
+    .parallax2 {
+        height: 900px;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        .parallax__layer {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            overflow: hidden;
+        }
+        .layer0 {
+            background: url('img/bg.jpg') repeat-x center;
+            background-size: cover;
+            width: 100vw;
+            height: 100%;
+            opacity: 1;
+        }
+        .layer0-a {
+            background: url('img/jelly.png') repeat-x center;
+            background-size: 40%;
+            width: 150%;
+            height: 1000px;
+            margin-left: -25%;
+            margin-top: 100px;
+            filter: blur(2px);
+        }
+        .layer0-b {
+            background: url('img/underwater-roots-01.png') repeat-x center;
+            width: 150%;
+            height: 1200px;
+            margin-left: -25%;
+            margin-top: -100px;
+            filter: blur(2px);
+        }
+        .layer1 {
+            background: url('img/Stars%20Small_1.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1200px;
+            margin-left: -25%;
+            margin-top: -100px;
+        }
+        .layer2 {
+            background: url('img/underwater-roots-02.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1200px;
+            margin-left: -15%;
+            margin-top: -100px;
+        }
+        .layer3 {
+            background: url('img/underwater-roots-03.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1200px;
+            margin-left: -45%;
+            margin-top: -100px;
+        }
+        .layer3-a {
+            background: url('img/underwater-roots-04.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1200px;
+            margin-left: -45%;
+            margin-top: -100px;
+        }
+        .layer4 {
+            background: url('img/underwater-roots-07.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1400px;
+            margin-left: -25%;
+            margin-top: -300px;
+        }
+        .layer5 {
+            background: url('img/underwater-roots-08.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1400px;
+            margin-left: -25%;
+            margin-top: -300px;
+        }
+        .layer6 {
+            background: url('img/underwater-roots-05.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1400px;
+            margin-left: -25%;
+            margin-top: -300px;
+        }
+        .layer7 {
+            background: url('img/Stars-Big_1_2_PC.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1200px;
+            margin-left: -25%;
+            margin-top: -100px;
+            opacity: 0.3;
+        }
+        .layer8-a {
+            background: url('img/lights.png') repeat-x center;
+            background-size: cover;
+            width: 100vw;
+            height: 700px;
+            margin-top: -200px;
+            background-blend-mode: overlay;
+        }
+        .layer8-b {
+            background: url('img/lights.png') repeat-x center;
+            background-size: cover;
+            width: 100vw;
+            height: 700px;
+            margin-top: -200px;
+            margin-left: 200px;
+            background-blend-mode: overlay;
+        }
+        .layer8-c {
+            background: url('img/lights.png') repeat-x center;
+            background-size: cover;
+            width: 100vw;
+            height: 700px;
+            margin-top: -200px;
+            margin-left: -100px;
+            background-blend-mode: overlay;
+        }
+        .layer8-d {
+            background: url('img/underwater-bg.png') repeat-x center;
+            background-size: cover;
+            width: 150%;
+            height: 1200px;
+            margin-left: -25%;
+            margin-top: -100px;
+            background-blend-mode: overlay;
+            opacity: 0.4;
+        }
+        .layer8 {
+            background-repeat: repeat-x;
+            background-position: center;
+            background-size: cover;
+            width: 150%;
+            height: 1200px;
+            margin-left: -25%;
+            margin-top: -100px;
+            opacity: 0.4;
+        }
+    }
+    .hero-text-box2 {
+        width: 100vw;
+        height: auto;
+        margin-top: 70px;
+        h2 {
+            width: auto;
+            height: auto;
+            margin: 2rem 0 3rem 0;
+            display: block;
+            text-align: center; 
+        }
+    }
+    .player {
+        height: 800px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+        .details {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        .track-art {
+            margin: 25px;
+            height: 200px;
+            width: 200px;
+            background-image: url('');
+            background-size: cover;
+            border-radius: 15px;
+            -webkit-box-shadow: 0px 0px 10px 5px #ffffff; 
+            box-shadow: 0px 0px 10px 5px #ffffff;
+        }
+        .now-playing {
+            font-size: 1rem;
+        }
+        .track-name {
+            margin-top: 25px;
+            font-size: 3rem;
+        }
+        .track-desc {
+            margin-top: 25px;
+            font-size: 1.5rem;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .playpause-track,
+        .prev-track,
+        .next-track,
+        .download-track {
+            padding: 25px;
+            opacity: 0.8;
+            transition: opacity .2s;
+        }
+        .playpause-track:hover,
+        .prev-track:hover,
+        .next-track:hover,
+        .download-track:hover {
+            opacity: 1.0;
+        }
+        .slider_container {
+            width: 75%;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .seek_slider,
+        .volume_slider {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 5px;
+            background: black;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        .seek_slider::-webkit-slider-thumb,
+        .volume_slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            background: white;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .seek_slider:hover,
+        .volume_slider:hover {
+            opacity: 1.0;
+        }
+        .seek_slider {
+            width: 60%;
+        }      
+        .volume_slider {
+            width: 30%;
+        }  
+        .current-time,
+        .total-duration {
+            padding: 10px;
+        }  
+        i.fa-volume-down,
+        i.fa-volume-up {
+            padding: 10px;
+        }    
+        i.fa-play-circle,
+        i.fa-pause-circle,
+        i.fa-step-forward,
+        i.fa-step-backward {
+            cursor: pointer;
+        }
+    }  
+    #visualizer {
+        width: 100vw;
+        height: 800px;
+        position: absolute;
+        top: 100px;
+    }
+    .overlay-transition-04 {
+        background: url('img/grass.png') repeat-x center;
+        background-size: cover;
+        width: 100%;
+        height: 170px;  
+        position: absolute;
+        top: 805px; 
+        filter:brightness(5%) blur(3px);
+    }
+}
+
+.double-overlay {
+    overflow: hidden;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    .overlay-transition-03 {
+        background-size: cover;
+        width: 100%;
+        height: 100%;                                                         
+    }
+    .overlay-transition-05 {
+        background: url('img/grassupsidedown.png') repeat-x center;
+        background-size: cover;
+        width: 100%;
+        height: 160px;  
+        position: absolute;
+        top: 0; 
+        filter:brightness(5%);
+    }   
+}
+
+.parallax-decorations-03 {
+    overflow: hidden;
+    background: url('img/leaf-05.png') no-repeat left;
+    background-size: contain;
+    width: 100px;
+    height: 90px;                                                                  
+    position: absolute; 
+    z-index: 1;
+    top: calc(180vh + 1800px);
+    left: 20%;
+    filter: blur(3px) brightness(20%);
+}
+
+.contacts-section {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    margin-top: 0;
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+    img {
+        width: 70px;
+        height: 60px;
+    }
+    .btn {
+        opacity: 0.7;
+    }
+    .btn:hover {
+        opacity: 1;
+    }
+    h2 {
+        position: absolute;
+        width: 100%;
+    }
+    .contact-list {
+        display: inline-block;
+        position: absolute;
+        top: 300px;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        #nav0 {
+            left: 5%;
+        }
+        #nav1 {
+            left: 27.5%;
+        }
+        #nav2 {
+            left: calc(50% - 31.405px);
+        }
+        #nav3 {
+            left: calc(72.5% - 56.82px);
+        }
+        #nav4 {
+            left: calc(95% - 64.80px);
+        }
+        .contactList {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            height: auto;
+        }
+    }
+}
+
+.parallax-decorations-04 {
+    overflow: hidden;
+    background: url('img/leaf-01.png') no-repeat left;
+    background-size: contain;
+    width: 150px;
+    height: 140px;                                                                  
+    position: absolute; 
+    z-index: 1;
+    top: calc(180vh + 1400px);
+    left: 79%;
+    filter: blur(2px) brightness(50%);
+}
+
+.parallax-decorations-05 {
+    overflow: hidden;
+    background: url('img/leaf-03.png') no-repeat left;
+    background-size: contain;
+    width: 170px;
+    height: 170px;                                                                  
+    position: absolute; 
+    z-index: 1;
+    top: calc(180vh + 3200px);
+    left: 53%;
+}
+
+.credits-section {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    h4 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        position: absolute;
+        top: 875px;
+        z-index: 8;
+        color: white;
+    } 
+    .vertical-parallax-scene {
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .transition {
+            background: url('img/02_Bushes_upsidedown.png') repeat-x center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+            height: 300px;
+            z-index: 7;
+        }
+        .para__layer{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .para__layer__0 {
+            background: url('img/dawn-bg.png') repeat-x center;
+            background-size: cover;
+            width: 100vw;
+            height: 1700px;
+            top: 100px;
+            background-blend-mode: overlay;
+            opacity: 0.5;
+            z-index: 5;
+        }
+        .para__layer__1 {
+            background: url('img/back-buildings.png') repeat-x center;
+            background-size: cover;
+            width: 100vw;
+            height: 1300px;
+            top: 500px;
+            z-index: 2;
+        }
+        .para__layer__2 {
+            background: url('img/foreground.png') repeat-x center;
+            background-size: cover;
+            width: 100vw;
+            height: 800px;
+            top: 1000px;
+            z-index: 3;
+        }
+        .para__layer__3 {
+            background: url('img/tree.png') repeat-x center;
+            background-size: cover;
+            width: 100vw;
+            height: 1400px;
+            top: 1100px;
+            z-index: 4;
+        }
+        .cover {
+            background: url('img/far-buildings.png') no-repeat center;
+            display: block;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100vw;
+            z-index: 1;
+        }
+    }
+    .email-link {
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        top: 925px;
+        left: calc(50% - 60px);
+        color: #FFF;
+        border: 4px solid #000;
+        box-shadow:0px 0px 0px 1px #000 inset;
+        background-color: #000;
+        overflow: hidden;
+        position: absolute;
+        z-index: 8;
+        transition: all 0.3s ease-in-out;
+        i {
+            margin-top: 5px;
+            transition: all 0.2s ease-out;
+            z-index: 2;
+        }
+    }
+    .email-link:hover {
+        border: 4px solid #666;
+        background-color: #FFF;
+        box-shadow:0px 0px 0px 4px #EEE inset;
+        i {
+            color: #333;
+        }
+    }
+    .email-link:after {
+        background: #FFF;
+        border: 0px solid #000;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .8;
+        position: absolute;
+        top: -50px;
+        -webkit-transform: rotate(35deg);
+                transform: rotate(35deg);
+        width: 50px;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        z-index: 1;
+    }
+    .email-link:hover:after {
+        background: #FFF;
+        border: 20px solid #000;
+        opacity: 0;
+        left: 120%;
+        -webkit-transform: rotate(40deg);
+                transform: rotate(40deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+     ::before,
+     ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count:  1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * jQuery.RandomBlinker Default CSS
+ * http://www.marcellobrivio.com/jquery.randomblinker
+ *
+ * Created by Marcello Brivio
+ * http://www.marcellobrivio.com
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+ 
+#matrixTab {width: 100%; height: 100%;}
+#matrixTab td {background-color: transparent; -webkit-transition: all .25s ease-in-out; -moz-transition: all .25s ease-in-out; -o-transition: all .25s ease-in-out; -webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out;}
+#matrixTab td.on {background-color: #0f0;}
+#matrixTab td.off {background-color: transparent;}

@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 25, 44);
+    color: rgba(219, 219, 219, 0.85);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+
+a {
+    text-decoration: none; 
+    color: rgba(219, 219, 219, 0.85);
+}
+
+section {
+    padding: 20vh 5vw 20vh 5vw;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax {
+    height: 100vh;
+    width: 100vw;
+    background: url('img/10_Sky.png') repeat center;
+    background-size: contain;
+    position: relative;
+    display: flex;
+}
+
+.parallax__layer {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer1 {
+    background: url('img/09_Forest.png') repeat-x center;
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+}
+
+.layer2 {
+    background: url('img/08_Forest.png') repeat-x center;
+    
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+}
+
+.layer3 {
+    background: url('img/07_Forest.png') repeat-x center;
+    
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+}
+
+.layer4 {
+    background: url('img/06_Forest.png') repeat-x center;
+    
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+}
+
+.layer5 {
+    background: url('img/05_Particles.png') repeat-x center;
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+}
+
+.layer6 {
+    background: url('img/04_Forest.png') repeat-x center;
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+}
+
+.layer7 {
+    background: url('img/Stars%20Small_1.png') repeat-x center;
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+    opacity: 0.3;
+}
+
+.layer8-a {
+    background: url('img/Stars-Big_1_1_PC.png') repeat-x center;
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+    opacity: 0.8;
+}
+
+
+.layer8 {
+    background: linear-gradient(rgba(39, 146, 253, 0.36), rgba(214, 20, 230, 0.36)), url('img/01_Mist.png') repeat-x center;
+    background-size: cover;
+    width: 150%;
+    height: 140vh;
+    margin-left: -25%;
+    margin-top: -20vh;
+    opacity: 0.5;
+}
+
+.hero-text-box {
+    padding: 20vh;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+h1 {
+    background: url(img/logo-name.gif) no-repeat center;
+    background-size: cover;
+    margin: 0;
+    color: rgb(255, 255, 255, 0);
+    letter-spacing: 0.4rem;
+    font-weight: 600;
+    font-size: 14vw;
+    animation-name: blink;
+    animation-delay: 3s;
+    animation-duration: 3.2s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% { 
+        opacity: 0; 
+    }
+    1% {
+        opacity: 1;
+    }
+}
+
+.mainNav {
+    overflow: hidden;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 2vh;
+    transition: 0.5s;
+}
+
+.progressBar {
+    position: fixed;
+    width: 80vw;
+    height: 2vh;
+    left: 10vw;
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 20px;
+    border: 3px solid rgba(144, 144, 144, 0.56);
+    box-shadow: 0 0 0.2em rgb(0, 0, 0);
+}
+
+.bar {
+    background: rgb(101,243,245);
+    background: linear-gradient(90deg, rgba(101,243,245,0.7189250700280112) 0%, rgba(72,135,223,1) 25%, rgba(96,63,209,0.79) 50%, rgba(140,53,203,1) 75%, rgba(201,60,190,0.7945553221288515) 100%);
+    position: fixed;
+    border-radius: 20px;
+    max-width: 80vw;
+    height: 2vh;
+    left: 10vw;
+    top: 2vh;
+    width: 0%;
+}
+
+#canvas-basic {
+    position: fixed;
+    border-radius: 20px;
+    max-width: 80vw;
+    height: 2vh;
+    left: 10vw;
+    top: 2vh;
+    width: 0%;
+}
+
+.sidebarList {
+    overflow-x: hidden;
+    font-size: 2vw; 
+    color: rbg(#ffffff);
+    font-weight: 500;
+    text-shadow: 0 0 0.2em rgb(0, 0, 0);
+    padding-top: 3vh;
+    padding-left: 5vw;
+    text-align: center;
+    height: 9vh;
+}
+
+.mainNav .fas:hover {
+    color: #ffffff;
+}
+
+.mainNav .far:hover {
+    color: #ffffff;
+}
+
+.mainNav li {
+    display: inline-block;
+}
+
+.mainNav ul {
+    list-style-type: none;
+}
+
+.overlay-transition {   
+    background: url(img/02_Bushes.png) repeat-x center;
+    background-size: cover;
+    width: 100vw;
+    height: 50%;
+    position: absolute;
+    z-index: 0;
+    top: 50vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.about-me-section {
+    overflow: hidden;
+    background-color: rgb(17, 25, 44);
+    position: absolute;
+    display: inline-flex;
+    width: 100vw;
+    height: 100vh;  
+}
+
+.about-me-section p {
+    width: 60vw;
+    height: 100%;
+    left: 30vw;
+    position: absolute;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}

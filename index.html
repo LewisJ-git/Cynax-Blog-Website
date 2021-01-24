@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="H20, H20Ghost, Cynax">
+    <meta name="description" content="Cynax's blog post">
+    <meta name="author" content="Long Nguyen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" tymenpe="text/css" href="resources/css/sass.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>Cynax | Home</title>
+</head>
+
+<body>
+    <!-- <div class="loading-page">
+        <div class="counter">
+          <p>loading</p>
+          <h1>0%</h1>
+          <hr/>
+        </div>    
+    </div> -->
+    <div class="wrapper" id="main">
+        <header>
+            <div class="parallax" id="scene">
+                <div class="parallax__layer layer0" data-depth="0"></div>
+                <div class="parallax__layer layer1" data-depth="0.2"></div>
+                <div class="parallax__layer layer2" data-depth="0.4"></div>
+                <div class="parallax__layer layer3" data-depth="0.6"></div>
+                <div class="parallax__layer layer4" data-depth="0.8"></div>
+                <div class="parallax__layer layer5" data-depth="1"></div>
+                <div class="parallax__layer layer6" data-depth="1.2"></div>
+                <div class="parallax__layer layer7" data-depth="1.4"></div>
+                <canvas class="parallax__layer layer8" id="canvas-image-blending" data-depth="1.6"></canvas>
+                <div class="parallax__layer layer8-a" data-depth="1.8"></div>
+                <div class="hero-text-box">
+                    <h1 class="glitch flicker02">
+                        Cynax
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <div class="mainNav">
+            <div class="progressBar">
+                <canvas class="bar" id="canvas-basic"></canvas>
+            </div>
+            <div class="section-icons">
+                <div class="sidebarList btn" id="nav0"><a href="#main"><i class="fas fa-home fa-lg"></i></a></div>
+                <div class="sidebarList btn" id="nav1"><a href="#aboutme"><i class="far fa-comment fa-lg"></i></a></div>
+                <div class="sidebarList btn" id="nav2"><a href="#previews"><i class="fas fa-music fa-lg"></i></a></div>
+                <div class="sidebarList btn" id="nav3"><a href="#contacts"><i class="fas fa-phone fa-lg"></i></a></div>
+                <div class="sidebarList btn" id="nav4"><a href="#creds"><i class="far fa-sticky-note fa-lg"></i></a></div>
+            </div>
+        </div>
+        <div class="overlay-transition"></div>
+        <div class="parallax-decorations-01 para-deco" data-rate="-0.25"></div>
+        <section class="about-me-section" id="aboutme">
+            <h2>
+                About Me
+            </h2>
+            <div class="profile-picture"></div>
+            <p>
+                Howdy! I am Cynax. You might know me by H20Ghost. Currently, I am a student who is very interested in music. 
+                <br> <br> My projects includes a variety of genres such as techno, lo-fi, cinematic, house, and eceteras. 
+                Additionally, I sometimes experiments with other rather unconventional genres as well.
+                <br> <br> There are many great artists who I looked up to and inspired me such as Mameyudoufu, Kivamkii, Auvic, Zekk, Psyqui, Vaporcruise, and M2U.
+                <br> <br> While I am still pretty new to the music production scene, I've composed some recognizable pieces such as <i>Alter</i>, <i>Jester</i>, or <i>Dismal</i> with 11,000+, 4,000+, and 4,000+ listeners on Newgrounds respectively.
+                <br> <br> Regardless, I will continue to improve my skill as an artist and hoping to work with a rhythm game in the future!
+            </p>
+            <div class="overlay-transition-02 flicker"></div>
+        </section>
+        <div class="parallax-decorations-02 para-deco" data-rate="0.15"></div>
+        <section class="song-previews-section" id="previews">
+            <div class="parallax2" id="scene2">
+                <div class="parallax__layer2 layer0" data-depth="0"></div>
+                <div class="parallax__layer2 layer8-d" data-depth="0.2"></div>
+                <div class="parallax__layer2 layer0-b" data-depth="0.3"></div>
+                <div class="parallax__layer2 layer0-a" data-depth="0.4"></div>
+                <div class="parallax__layer2 layer1" data-depth="0.6"></div>
+                <div class="parallax__layer2 layer8-a" data-depth="1.3"></div>
+                <div class="parallax__layer2 layer2" data-depth="0.7"></div>
+                <div class="parallax__layer2 layer8-b" data-depth="0.9"></div>
+                <div class="parallax__layer2 layer3" data-depth="0.8"></div>
+                <div class="parallax__layer2 layer3-a" data-depth="1"></div>
+                <div class="parallax__layer2 layer4" data-depth="1.2"></div>
+                <div class="parallax__layer2 layer5" data-depth="1.4"></div>
+                <div class="parallax__layer2 layer8-c" data-depth="0.5"></div>
+                <div class="parallax__layer2 layer6" data-depth="1.5"></div>
+                <div class="parallax__layer2 layer7" data-depth="1.6"></div>  
+                <canvas class="parallax__layer layer8" id="canvas-image-blending-02" data-depth="0"></canvas>  
+                <div class="hero-text-box2">
+                    <h2>
+                        Releases
+                    </h2>
+                </div>
+            </div>  
+            <div class="player">
+                <audio id="myAudio" preload="auto">
+                </audio>
+                <div class="details">
+                  <div class="now-playing">PLAYING x OF y</div>
+                  <div class="track-art"></div>
+                  <div class="track-name">Track Name</div>
+                  <div class="track-desc">Genre</div>
+                </div>
+                <div class="buttons">
+                  <div class="prev-track btn"><i class="fa fa-step-backward fa-2x"></i></div>
+                  <div class="playpause-track btn"><i class="fa fa-play-circle fa-5x"></i></div>
+                  <div class="next-track btn"><i class="fa fa-step-forward fa-2x"></i></div>
+                  <a class="download-track btn" href="resources/audio"><i class="fas fa-download fa-2x"></i></a> 
+                </div>
+                <div class="slider_container">
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                  <div class="total-duration">00:00</div>
+                </div>
+                <div class="slider_container">
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+            </div>
+            <canvas id="visualizer"></canvas>
+            <div class="overlay-transition-04"></div>
+        </section>
+        <div class="double-overlay">
+            <canvas class="overlay-transition-03" id="canvas-image-blending-03"></canvas>
+            <div class="overlay-transition-05"></div>
+        </div>
+        <div class="parallax-decorations-03 para-deco" data-rate="-0.09"></div>
+        <section class="contacts-section" id="contacts">
+            <h2>
+                Get in touch
+            </h2>
+            <div class="contact-list">
+                <div class="contactList btn" id="nav0"><a href="https://soundcloud.com/cynax_d" target="_blank"><i class="fab fa-soundcloud fa-4x"></i></a></div>
+                <div class="contactList btn" id="nav1"><a href="https://h20ghost.newgrounds.com" target="_blank"><img src="resources/img/ng_tank.png"></a></div>
+                <div class="contactList btn" id="nav2"><a href="https://steamcommunity.com/profiles/76561198196187723" target="_blank"><i class="fab fa-steam fa-4x"></i></a></div>
+                <div class="contactList btn" id="nav3"><a href="https://discord.gg/UjHWAbVVPg" target="_blank"><i class="fab fa-discord fa-4x"></i></a></div>
+                <div class="contactList btn" id="nav4"><a href="https://twitter.com/FernappleDavila" target="_blank"><i class="fab fa-twitter fa-4x"></i></a></div>
+            </div>
+        </section>
+        <div class="parallax-decorations-04 para-deco" data-rate="0.12"></div>
+        <div class="parallax-decorations-05 para-deco" data-rate="-0.2"></div>
+        <section class="credits-section">
+            <div class="vertical-parallax-scene">
+                <div class="transition"></div>
+                <div class="cover"></div>
+                <div class="rellax para__layer para__layer__0" data-rellax-speed="2"></div>
+                <div class="rellax para__layer para__layer__1" data-rellax-speed="3"></div>
+                <div class="rellax para__layer para__layer__2" data-rellax-speed="4"></div>
+                <div class="rellax para__layer para__layer__3" data-rellax-speed="5"></div>
+            </div>
+            <div class="cretdits" id="creds">
+                <h4>Site by Long Nguyen</h4>
+                <a class="email-link btn" href="mailto:longheosua@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+            </div>
+        </section>
+    </div>
+    <script src="vendors/js/jquery-3.5.1.js"></script>
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/playlist.js"></script>
+    <script src="resources/js/audio-visualizer.js"></script>
+    <script src="https://kit.fontawesome.com/ffe036f8b6.js" crossorigin="anonymous"></script>
+    <script src="vendors/js/granim.min.js"></script>
+    <script>
+        var granimInstance = new Granim({
+            element: '#canvas-basic',
+            direction: 'left-right',
+            isPausedWhenNotInView: false,
+            states: {
+                "default-state": {
+                    gradients: [
+                        ['#65f3f5', '#4887df'],
+                        ['#603fd1', '#8c35cb'],
+                        ['#c93cbe', '#65f3f5']
+                    ],
+                    transitionSpeed: 3000
+                }
+            }
+        });
+        var granimInstance = new Granim({
+            element: '#canvas-image-blending',
+            direction: 'top-bottom',
+            isPausedWhenNotInView: false,
+            image : {
+                source: 'resources/css/img/01_Mist.png',
+                blendingMode: 'color',
+            },
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#65f3f5', '#4887df'],
+                        ['#603fd1', '#8c35cb'],
+                        ['#c93cbe', '#65f3f5']
+                    ],
+                    transitionSpeed: 5000
+                }
+            }
+        });
+        var granimInstance = new Granim({
+            element: '#canvas-image-blending-02',
+            direction: 'top-bottom',
+            isPausedWhenNotInView: false,
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#2acd99', '#2a5dcd'],
+                        ['#2abacd', '#2a34cd'],
+                        ['#2a86cd', '#2acdac']
+                    ],
+                    transitionSpeed: 2000
+                }
+            }
+        });
+        var granimInstance = new Granim({
+            element: '#canvas-image-blending-03',
+            direction: 'top-bottom',
+            isPausedWhenNotInView: false,
+            image : {
+                source: 'resources/css/img/09_Forestupsidedown.png',
+                blendingMode: 'color',
+            },
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#2a5dcd', '#11192c'],
+                        ['#2a34cd', '#11192c'],
+                        ['#2acdac', '#11192c']
+                    ],
+                    transitionSpeed: 2000
+                }
+            }
+        });
+    </script>
+    <script src="vendors/js/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance =  new Parallax(scene);
+        var scene2 = document.getElementById('scene2');
+        var parallaxInstance =  new Parallax(scene2, {
+            relativeInput: true,
+            clipRelativeInput: true
+        });
+    </script>
+    <script src="vendors/js/mgGlitch.min.js"></script>
+    <script>
+        $( function() {
+        $( ".glitch" ).mgGlitch({
+            destroy : false, 
+            glitch: true, 
+            scale: true, 
+            blend : true, 
+            blendModeType : 'hue',
+            glitch1TimeMin : 200, 
+            glitch1TimeMax : 400,
+            glitch2TimeMin : 10, 
+            glitch2TimeMax : 100, 
+        });
+    });
+    </script>
+    <script src="vendors/js/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+</body>
+
+</html>
